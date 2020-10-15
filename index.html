@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesi 3 Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>FORM ORDER</h1>
+        <p>Form pembelian barang / produk antar negara</p>
+        <form action="">
+            <h2>Informasi Produk</h2>
+            <div class="form-grup">
+                <label for="url"> URL </label>
+                <input type="text" class="form-control" name="url" id="url" placeholder="http://url.com/">
+            </div>
+            <div class="form-grup">
+                <label for="name"> Nama Produk </label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Tuliskan Nama Produk">
+            </div>
+            <div class="form-grup">
+                <label for="Kategori"> Kategori Produk </label>
+                <select name="Kategori" id="Kategori" class="form-control">
+                    <option value="Kategori 1">Kategori 1</option>
+                    <option value="Kategori 2">Kategori 2</option>
+                    <option value="Kategori 3">Kategori 3</option>
+                    <option value="Kategori 4">Kategori 4</option>
+                    <option value="Kategori 5">Kategori 5</option>
+                    <option value="Kategori 6">Kategori 6</option>
+                    <option value="Kategori 7">Kategori 7</option>
+                    <option value="Kategori 8">Kategori 8</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="form-grup col-6">
+                    <label for="harga"> Harga / pcs </label>
+                    <input type="text" class="form-control" name="harga" id="harga" placeholder="Tuliskan Harga Produk / pcs">
+                </div>
+                <div class="form-grup col-6">
+                    <label for="mata uang"></label>
+                    <select name="mata uang" id="mata uang" class="form-control">
+                        <option value="idr">IDR</option>
+                        <option value="afa">AFA</option>
+                        <option value="all">ALL</option>
+                        <option value="xaf">XAF</option>
+                        <option value="usd">USD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-grup">
+                    <label for="berat"> Berat Produk / pcs </label>
+                    <div class="row">
+                        <div class="col-2">
+                            <input type="number" class="form-control" name="berat" id="berat" placeholder="Berat">
+                        </div>
+                        <div class="col-2">
+                            <select name="satuan berat" id="satuan berat" class="form-control">
+                                <option value="gram">Gram</option>
+                                <option value="kilogram">Kilo Gram</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ukuran"> Ukuran ( P x L x T ) </label>
+                    <div class="row">
+                        <div class="col-2">
+                            <input type="number" class="form-control" name="panjang" id="panjang" placeholder="Panjang">
+                        </div>
+                        <div class="col-2">
+                            <input type="number" class="form-control" name="lebar" id="lebar" placeholder="Lebar">
+                        </div>
+                        <div class="col-2">
+                            <input type="number" class="form-control" name="tinggi" id="tinggi" placeholder="Tinggi">
+                        </div>
+                        <div class="col-2">
+                            <select name="satuan_panjang" id="satuan_panjang" class="form-control">
+                                <option value="cm">cm</option>
+                                <option value="m">m</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-grup">
+                <label for="catatan Pembelian">Catatan Pembelian </label>
+                <textarea name="catatan Pembelian" id="catatan Pembelian"></textarea>
+            </div>
+            <div class="form-grup">
+                <label for="jumlah">Jumlah Barang</label>
+                <div class="row qt">
+                    <button>-</button>
+                    <input type="text" name="jumlah" id="" value="1" class="form-control">
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="form-grup">
+                <label for="negara">Negara</label>
+                <select name="negara" id="negara" class="form-control">
+                    <option value="ID">Indonesian</option>
+                    <option value="IN">India</option>
+                    <option value="EN">English</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+
+                    
+                </select>
+            </div>
+            <div class="form-grup">
+                <div class="upload">
+                    <label for="upload"> Upload Image <br> (Maks. 2.5 MB)
+                        <img src="img/upload.jpg" alt="">
+                    </label>
+                    <input type="file" name="upload" id="upload">
+                </div>
+            </div>
+            <input type="submit" value="Tambahkan Ke Keranjang" name="keranjang">
+            <input type="submit" value="Beli" name="beli">
+        </form>
+    </div>
+</body>
+
+</html>
